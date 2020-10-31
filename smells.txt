@@ -1,0 +1,11 @@
+1. this type of smell is a dispensable. the refactoring that can be
+applied is extracting the code or creating a function manually.
+3. this type of smell is innapropriate intimacy
+4. this can be fixed with an internal for loop that breaks when it
+does what it is supposed to then has a method to break the outer loop
+as well
+6. the duplicate code was found in src/test/java/hudson/model/RunParameterDefinitionTest.java
+I extracted the code that was in the functions that had to do with
+creating a project in testNULLfilter and testALLfilter and created
+a new function called testHelper that simply made a function that
+created project
